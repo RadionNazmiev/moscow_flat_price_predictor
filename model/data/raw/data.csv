@@ -1,4 +1,4 @@
-Price,Apartment type,Metro station,Minutes to metro,Region,Number of rooms,Area,Living area,Kitchen area,Floor,Number of floors,Renovation
+price,apartment_type,metro_station,minutes_to_metro,region,number_of_rooms,area,living_area,kitchen_area,floor,number_of_floors,renovation_type
 6300000.0,Secondary, Опалиха,6.0,Moscow region,1.0,30.6,11.1,8.5,25.0,25,Cosmetic
 9000000.0,Secondary, Павшино,2.0,Moscow region,1.0,49.2,20.0,10.0,6.0,15,European-style renovation
 11090000.0,Secondary, Мякинино,14.0,Moscow region,1.0,44.7,16.2,13.1,10.0,25,Cosmetic
