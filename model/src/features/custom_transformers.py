@@ -137,4 +137,3 @@ class CustomTransformer(BaseEstimator, TransformerMixin):
         X_transformed = pd.concat([X, bin_feats_df], axis=1)
         
         return X_transformed
-

@@ -1,0 +1,17 @@
+version: "3.8" 
+
+services:
+  web:
+    build: ./front-end
+    ports:
+      - 3000:3000
+  api:
+    build: ./back-end
+    ports:
+      - 5000:5000
+#  db:
+#    image: mongo:4.0-xenial
+#    ports: 
+#      - 27017:27017
+#volumes:
+#  moscow_apartment_price_predictor:

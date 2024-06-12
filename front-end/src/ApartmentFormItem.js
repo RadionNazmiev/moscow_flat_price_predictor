@@ -5,7 +5,7 @@ const ApartmentFormItem = () => {
     <div style={{ marginBottom: "10px" }}>
         <label>
         Apartment Type:
-        <select
+        {/* <select
             name="apartment_type"
             value={formData.apartment_type}
             onChange={handleChange}
@@ -16,7 +16,7 @@ const ApartmentFormItem = () => {
                 {type}
             </option>
             ))}
-        </select>
+        </select> */}
         </label>
     </div> 
   )

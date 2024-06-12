@@ -1,9 +1,23 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import util
+import webbrowser
+from flask import make_response
 
-import threading
 
 app = Flask(__name__)
+CORS(app)
+
+
+def open_browser_tab():
+    url = "http://localhost:5000"
+    webbrowser.open_new_tab(url)
+
+def start_server():
+    print("Starting python flask server...")
+    util.load_saved_artifacts()
+    app.run(debug=True, host='0.0.0.0', port=5000)
+
 
 
 @app.route('/', methods=['GET'])
@@ -12,7 +26,12 @@ def get_form_info():
     response.headers.add('Access-Control-Allow-Origin', '*')
 
     return response
-    
+
+@app.route('/favicon.ico')
+def favicon():
+    return make_response('', 200)
+
+
 @app.route('/predict_apartment_price', methods=['POST'])
 def predict_apartment_price():
 
@@ -50,8 +69,7 @@ def predict_apartment_price():
 
     return response
 
+
+
 if __name__ == '__main__':
-    print("Starting python flask server...")
-    util.load_saved_artifacts()
-    threading.Timer(1.25, util.open_browser).start()
-    app.run(debug=True,host='0.0.0.0', port=5000)
+    start_server()

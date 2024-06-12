@@ -7,3 +7,4 @@ pandas==2.2.2
 scikit-learn==1.5.0
 scipy==1.13.1
 seaborn==0.13.2
+flask-cors==4.0.1

@@ -3,13 +3,11 @@ import json
 import numpy as np
 import pandas as pd
 import os
-import webbrowser
 
 __form_info = None
 __model = None
 
-def open_browser():
-    webbrowser.open_new('http://127.0.0.1:5000/')
+
     
 def get_form_info():
     return __form_info
@@ -78,7 +76,7 @@ def load_saved_artifacts():
 
 if __name__ == '__main__':
     load_saved_artifacts()
-    get_form_info()
+    print(get_form_info())
 
     # print(get_estimated_price(
     #     'newly built',
