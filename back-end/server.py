@@ -1,17 +1,11 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, make_response
 from flask_cors import CORS
 import util
-import webbrowser
-from flask import make_response
 
 
 app = Flask(__name__)
 CORS(app)
 
-
-def open_browser_tab():
-    url = "http://localhost:5000"
-    webbrowser.open_new_tab(url)
 
 def start_server():
     print("Starting python flask server...")
@@ -46,6 +40,8 @@ def predict_apartment_price():
     floor = int(request.form['floor'])
     number_of_floors = int(request.form['number_of_floors'])
     renovation_type = request.form['renovation_type']
+
+    print(request.form)
 
     observation = [
         apartment_type,

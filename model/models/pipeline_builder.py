@@ -59,7 +59,6 @@ def create_pipeline(model, columns_for_MTE, columns_for_OHE, numerical_columns):
         ('preprocessor', col_transformer),
         ('model', model)
     ])
-
     return pipeline
 
 

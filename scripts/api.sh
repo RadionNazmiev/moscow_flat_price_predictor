@@ -16,7 +16,7 @@ fi
 
 echo "Navigating to the directory..."
 
-cd "/home/radionnazmiev/DS/moscow_flat_pricing_predictor/back-end/" || {
+cd "$HOME/DS/moscow_flat_price_predictor/back-end/" || {
     echo "Error: Failed to navigate to the directory. Please check the path and try again."
     exit 1
 }
