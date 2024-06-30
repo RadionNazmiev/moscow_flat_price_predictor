@@ -1,3 +1,4 @@
+#!/bin/bash
 
 if ! command -v conda &> /dev/null; then
     echo "Error: Conda is not installed or not in PATH. Please install Conda and try again."

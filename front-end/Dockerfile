@@ -13,11 +13,5 @@ RUN npm install
 # Copy the remaining app files
 COPY . .
 
-# Build the React app
-RUN npm run build
-
-# Expose port 3000 to the outside world
-EXPOSE 3000
-
-# Command to run the React app
-CMD ["npm", "start"]
+# Command to run the React app with Vite
+CMD [ "npm", "run", "dev"]

@@ -15,8 +15,6 @@ PROJECT_ROOT_DIR="$(pwd)"
 # Start tmux server
 tmux start-server
 
-
-
 # Create a new tmux session named "mhpp" with a window named "back"
 tmux new-session -d -s "mhpp" -n "back"
 
@@ -40,11 +38,9 @@ tmux split-window -v -t "mhpp:front.0"
 
 # Rename the panes in the "front" window
 tmux select-pane -t "mhpp:front.0" -T "server"
-tmux send-keys -t "mhpp:front.0" "cd $PROJECT_ROOT_DIR/front-end && npm start" Enter
+tmux send-keys -t "mhpp:front.0" "cd $PROJECT_ROOT_DIR/front-end && npm run dev" Enter
 
 tmux select-pane -t "mhpp:front.1" -T "main"
-
-
 
 # Attach to the "mhpp" session
 tmux a -t "mhpp:back"
