@@ -1,8 +1,17 @@
-# moscow_flat_price_predictor
+# Moscow Flat Price Predictor
+
 Predictor of Apartment Prices in Moscow
-# To run both front-end and back-end Docker containers just run a script from 
-# the project root directory assuming Docker is installed on your system
+
+## Getting Started
+
+To run both front-end and back-end Docker containers, navigate to the project root directory and execute the following script (assuming Docker is installed on your system):
+
+```sh
 ./scripts/run_docker_containers.sh
-# To run both front-end and back-end servers in a tmux session run a script from 
-# the project root directory
+```
+
+To run both front-end and back-end servers in a tmux session, navigate to the project root directory and execute the following script:
+
+```sh
 ./scripts/tmux.sh
+```
